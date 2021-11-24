@@ -102,7 +102,6 @@ html {
   flex-direction: column;
   width: 100%;
   padding: 20px;
-  border: 1px solid purple;
   position: relative;
   height: 100vh;
 }

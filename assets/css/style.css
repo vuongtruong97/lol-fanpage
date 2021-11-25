@@ -19,6 +19,27 @@ html {
 }
 /*  End RESET */
 /* __________________________________________________________________ */
+.topic {
+  font-size: 5rem !important;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px 16px;
+}
+.topic2 {
+  font-size: 2rem;
+  padding: 30px 20px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+.desc {
+  font-size: 1.8rem;
+  color: white;
+  text-align: justify;
+  padding: 0 20px 50px;
+}
 .wrap {
   height: 1000px;
 }
@@ -87,12 +108,22 @@ html {
 }
 #banner .banner__title {
   position: absolute;
-  width: 20%;
-  top: 80%;
+  width: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.about__layout .about__img {
+  width: 100%;
+}
 .about__layout {
+  background-color: #09121b;
+}
+.about__layout .about__title img {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  filter: grayscale(50%);
 }
 
 .about__layout .about__title {
@@ -103,7 +134,7 @@ html {
   width: 100%;
   padding: 20px;
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .about__layout .about__title .about__heading {
   color: white;
@@ -145,12 +176,51 @@ html {
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 60%;
 }
 .about__video-details h1 {
-  font-size: 5rem;
+  font-size: 6rem;
 }
-.about__video-details h3 {
-  font-size: 2rem;
+map__tutoria .about__video-details h3 {
+  font-size: 1.4rem;
   font-weight: 400;
+  width: fit-content;
+}
+.tutorial {
+  position: relative;
+  height: calc(100% - 100vh);
+}
+.tutorial .map__tutorial {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  width: 80%;
+  margin-left: auto;
+  height: 100vh;
+}
+.tutorial .map__tutorial img {
+  position: absolute;
+  top: -30px;
+  left: -150px;
+  width: 130%;
+}
+.tutorial .tutorial__left--section {
+  position: relative;
+  top: -80vh;
+  z-index: 2;
+  width: 50rem;
+  padding: 0 26px;
+  margin-left: 5%;
+  margin-right: auto;
+  text-align: justify;
+}
+.desc__details {
+  border: 1px solid rgb(77, 77, 77);
+  margin: 30px 0;
+}
+.section {
+  padding: 150px 0;
+}
+.champion__section {
+  background-color: #fff;
 }

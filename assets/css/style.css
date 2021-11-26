@@ -5,9 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --header-text-color: #303030;
+  --header-text-color: #d2b48c;
   --header-btn-background-color: #d9afd9;
   --background-hover-color: #ccc;
+  --title-color: #2c3e50;
 }
 * {
   font-size: 1.6rem;
@@ -17,8 +18,15 @@ html {
   text-decoration: none;
   list-style-type: none;
 }
+video {
+  width: 100%;
+}
 /*  End RESET */
 /* __________________________________________________________________ */
+hr {
+  width: 90%;
+  margin: 20px auto;
+}
 .topic {
   font-size: 5rem !important;
   font-weight: 500;
@@ -40,12 +48,16 @@ html {
   text-align: justify;
   padding: 0 20px 50px;
 }
-.wrap {
-  height: 1000px;
+.title {
+  text-transform: uppercase !important;
+  font-size: 6rem;
+  padding: 20px 0;
+  color: var(--title-color);
+  text-align: center;
 }
 #header {
   /* background-color: var(--header-btn-background-color); */
-  background-image: linear-gradient(0deg, #d9afd900 0%, #97d9e1 100%);
+  background-image: linear-gradient(0deg, #d9afd900 0%, #00464b 100%);
 
   height: 7rem;
   position: fixed;
@@ -72,6 +84,9 @@ html {
   border: 2px solid rgba(204, 204, 204, 0);
   border-radius: 1rem;
 }
+.header__option ul li {
+  height: 7rem;
+}
 .header__nav ul li a {
   height: 100%;
   display: flex;
@@ -81,15 +96,16 @@ html {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 600;
-  background: -webkit-linear-gradient(45deg, #cb00fd, #8d7c77, #02a2ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--header-text-color);
+  /* background: -webkit-linear-gradient(45deg, #cb00fd, #8d7c77, #02a2ff); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 .pc__nav-btn:hover a {
   cursor: pointer;
-  background: -webkit-linear-gradient(45deg, #02a2ff, #8d7c77, #cb00fd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient(45deg, #02a2ff, #8d7c77, #cb00fd); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   border-bottom: 2px solid #02a2ff;
 }
 #header .header__nav img {
@@ -117,7 +133,6 @@ html {
   width: 100%;
 }
 .about__layout {
-  background-color: #09121b;
 }
 .about__layout .about__title img {
   display: block;
@@ -165,6 +180,7 @@ html {
 }
 .about__video {
   position: relative;
+  background-color: #09121b;
 }
 .about__video video {
   width: 100%;
@@ -188,15 +204,16 @@ map__tutoria .about__video-details h3 {
 }
 .tutorial {
   position: relative;
-  height: calc(100% - 100vh);
+  height: 385vh;
+  background-color: #09121b;
 }
 .tutorial .map__tutorial {
-  overflow: hidden;
   position: sticky;
   top: 0;
   width: 80%;
   margin-left: auto;
   height: 100vh;
+  overflow: hidden;
 }
 .tutorial .map__tutorial img {
   position: absolute;
@@ -223,4 +240,90 @@ map__tutoria .about__video-details h3 {
 }
 .champion__section {
   background-color: #fff;
+}
+.section--topic--layout {
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.champion__section--topic :is(h2, p) {
+  color: #2c3e50;
+  text-align: center;
+}
+.schematic {
+  display: flex;
+}
+.video__tutorial {
+  width: 60%;
+}
+.content__tutorial {
+  flex: 1;
+  padding: 0 30px;
+}
+.content__tutorial .h3 {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 30px 50px;
+  border-bottom: 1px solid #000;
+}
+.content__tutorial .h3 p {
+  color: #000;
+  text-transform: none;
+  text-align: left;
+  padding: 10px 0;
+}
+.skill__section {
+  background-color: #fff;
+}
+.skill__section .section__header {
+  width: 70%;
+  margin: 0 auto;
+}
+.skill__section .section__header .desc {
+  color: #000;
+}
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #101215;
+}
+#footer .footer__logo {
+  padding: 50px 0;
+}
+#footer .contact {
+  width: 60%;
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#footer .fanpage ul li {
+  float: left;
+  padding: 20px;
+  color: #fff;
+}
+#footer .fanpage ul li a {
+  color: #fff;
+}
+#footer .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .button button {
+  height: 5rem;
+  margin: 0 20px;
+  text-align: center;
+  width: 25rem;
+  background-color: #0bc6e3;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+#footer .button button:hover {
+  cursor: pointer;
 }
